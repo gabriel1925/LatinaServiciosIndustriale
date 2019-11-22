@@ -18,5 +18,5 @@ var marker = L.marker([lat,lon]).addTo(mymap);
         
         var scroll = new SmoothScroll('a[href*="#"]',{
           speed:1000,
-          offset:58
+          offset:62
         });
