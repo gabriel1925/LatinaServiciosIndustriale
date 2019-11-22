@@ -60,14 +60,14 @@
               <li class="nav-item  active dropdown transitions-1">
                 <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Servicios</a>
                 <div class="dropdown-menu bg-yellow" aria-labelledby="dropdown01">
-                  <a class="dropdown-item text-secondary nav-close bg-yellow transitions-1" href="#piping">Piping</a>
-                  <a class="dropdown-item text-secondary nav-close bg-yellow transitions-1" href="#estructura">Estructura</a>
-                  <a class="dropdown-item text-secondary nav-close bg-yellow transitions-1" href="#servicio">Servicios</a>
-                  <a class="dropdown-item text-secondary nav-close bg-yellow transitions-1" href="#mantenimiento">Mantenimiento</a>
+                  <a data-scroll class="dropdown-item text-secondary nav-close bg-yellow transitions-1" href="#piping">Piping</a>
+                  <a data-scroll class="dropdown-item text-secondary nav-close bg-yellow transitions-1" href="#estructura">Estructura</a>
+                  <a data-scroll class="dropdown-item text-secondary nav-close bg-yellow transitions-1" href="#servicio">Servicios</a>
+                  <a data-scroll class="dropdown-item text-secondary nav-close bg-yellow transitions-1" href="#mantenimiento">Mantenimiento</a>
                 </div>
               </li>
               <li class="nav-item active">
-                <a href="#contacto" class="nav-link nav-close navcontac" >Contactanos</a>
+                <a data-scroll href="#contacto" class="nav-link nav-close navcontac" >Contactanos</a>
               </li>
             </ul>
           </div>
@@ -188,11 +188,10 @@
             <br><br> <br>
         </div>
               <!-- linea  de servicios -->
-              <div id="piping"></div>
       <div class="container py-2 margin58px">
     
           <!-- timeline item 1 -->
-          <div class="row no-gutters">
+          <div class="row no-gutters" id="piping">
               <div class="col-sm"> <!--Espacio--> </div>
               <!-- timeline item 1 center dot -->
               <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
@@ -582,6 +581,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <!-- <script src="https://code.jquery.com/jquery-3.4.1.js"></script> -->
+    <script src="./js/smooth-scroll.polyfills.min.js"></script>
     <!-- Cierre del menu al hacer click en un link -->
     <script>
       $(document).ready(()=>{
@@ -592,9 +592,7 @@
         $('.carousel-item').hover(()=>{
           $(".carousel").carousel('pause');
         });
-        $("body").click(()=>{
-          console.log($(window).scrollTop());
-        });
+          console.log($("#piping").scrollTop());
       });
       $(function(){
   $('[data-toggle="tooltip"]').tooltip();
