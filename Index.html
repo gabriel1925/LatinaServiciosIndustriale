@@ -1,0 +1,611 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- FONT WESOME 5 -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- Materials icons -->
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+    <!-- estilos propios -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- parallax -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script> -->
+    <!-- animated -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <!-- Leatflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin=""/>
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+    integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+    crossorigin=""></script>
+    <!-- scroll -->
+    <script src="./js/smooth-scroll.polyfills.min.js" before></script>
+    <title>Latina, Servicios Industriales</title>
+  </head>
+  <body>
+  
+    
+    <div class="containert-fluid" >
+      <!-- Menu de navegacion  -->
+      <nav class="navbar navbar-dark bg-yellow fixed-top  ">
+          <a class="navbar-brand" href="./Index.html"><h5> <span class="logo"><span class="logolah5">LA</span>TIN<span class="logoa">A</span></span> <small>Servicios Industriales</small></h5> </a>
+          <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
+            <li class="nav-item"><a href="https://www.facebook.com"  class="nav-link p-1 ml-4 icons-a animated fadeInLeft"><img src="./img/facebook.svg" alt="facebook" width="24" height="24"></a></li>
+            <li class="nav-item"><a href="https://wa.me/5492612496785?text=Me%20Gustaria%20conocer%20mas%20informacion" class="nav-link p-1 ml-4 icons-a animated fadeInLeft" data-toggle="tooltip" data-placement="bottom" title="+54926126947457"><img src="./img/whatsapp.svg" alt="whatsapp" width="24" height="24"></a></li>
+            <li class="nav-item " data-toggle="modal" data-target="#exampleModal"><span  class="pointer nav-link p-1 ml-4 mr-4 icons-a animated fadeInLeft"><img src="./img/envelope.svg" alt="Email" width="24" height="24"></span></li>
+          </ul>
+          <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon active"></span>
+          </button>
+        
+          <div class="navbar-collapse collapse" id="navbarsExample01">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item d-block d-sm-block d-md-none text-center">
+                <a href="https://www.facebook.com"  class="nav-link text-center d-smartphone ml-2 icons-a animated fadeInLeft"><img src="./img/facebook.svg" alt="facebook" width="24" height="24"></a>
+                <a href="https://wa.me/5492612496785?text=Me%20Gustaria%20conocer%20mas%20informacion" data-toggle="tooltip" data-placement="bottom" title="+54926126947457" class="nav-link text-center d-smartphone ml-2 icons-a animated fadeInLeft"><img src="./img/whatsapp.svg" alt="whatsapp" width="24" height="24"></a>
+                <a href="mailto:youremailaddress" class="nav-link text-center d-smartphone ml-2 mr-4 icons-a animated fadeInLeft" ><img src="./img/envelope.svg" alt="Email" width="24" height="24"></a></li>
+              <li class="nav-item active">
+                <a class="nav-link nav-close" href="./Index.html">Inicio <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link nav-close" href="#quienesomos">¿Quienes Somos?</a>
+              </li>
+              <li class="nav-item  active dropdown transitions-1">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Servicios</a>
+                <div class="dropdown-menu bg-yellow" aria-labelledby="dropdown01">
+                  <a class="dropdown-item text-secondary nav-close bg-yellow transitions-1" href="#piping">Piping</a>
+                  <a class="dropdown-item text-secondary nav-close bg-yellow transitions-1" href="#estructura">Estructura</a>
+                  <a class="dropdown-item text-secondary nav-close bg-yellow transitions-1" href="#servicio">Servicios</a>
+                  <a class="dropdown-item text-secondary nav-close bg-yellow transitions-1" href="#mantenimiento">Mantenimiento</a>
+                </div>
+              </li>
+              <li class="nav-item active">
+                <a href="#contacto" class="nav-link nav-close navcontac" >Contactanos</a>
+              </li>
+            </ul>
+          </div>
+      </nav>
+      <main>
+        <!-- Presentacion inicial escritorio -->
+        <div class="presentacion  animated  fadeIn margin58px  d-none d-sm-none d-md-block " >
+            <img src="./img/casco.jpg" alt="" class="foto1" >
+            <div class=" presentacion animated fadeIn  delay-1 position-absolute">
+                <img src="./triangulo1.png" alt="" class="triangulo1 ">
+            </div>
+            <div class="presentacion animated fadeIn  delay-2 triangulo2 d-none d-sm-none d-md-block" >
+                    <img src="./triangulo2.png" alt="" class="triangulo2 ">
+            </div>
+          
+            <div class="text-1  animated fadeInRight delay-3 d-none d-sm-none d-md-block">
+                <h1><span class="logo"><span class="logolah1">LA</span>TIN<span class="logoa">A</span></span> Servicios Industriales</h1>
+            </div>
+            <div class="text-2 ml-3 animated fadeInLeft delay-3 d-none d-sm-none d-md-block">
+              <span> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate iusto veniam cum tempore commodi exercitationem aspernatur, perspiciatis iure incidunt ipsum quos aperiam nesciunt illo molestiae labore soluta ducimus cupiditate. Repudiandae!</span>
+            </div>
+        </div>
+        
+        <!-- Presentacion Smartphone -->
+        <div class="d-block d-sm-block d-md-none margin58px">
+          
+        </div>
+        <!-- Flechas buttom -->
+        <div>
+          <img src="./img/flechasbuttom.svg"  class="flechabuttom" alt="" id="quienesomos">
+        </div>
+      <!-- segunda parte -->
+        <div class="parte2" >
+          <h1 class="text-center">Somos una Lorem ipsum, dolor sit amet consectetur adipisicing  </h1>
+          <div class="row m-3">
+            <div class="col-md-6">
+              <img src="./img/factory2.png" alt="factory" class="rounded-circle center1" width="140" height="140">
+              <h2 class="text-center">Informacion Historia de la empresa</h2>
+              <p>              Hola Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, quia, officiis voluptas architecto at tempora nobis aperiam necessitatibus doloribus dolorem eum quos? Aut culpa ex deserunt illo. Dignissimos, repellendus quam? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit iste iusto facilis harum labore, ex eligendi asperiores commodi a illo odio eveniet esse sunt est nihil aspernatur magnam possimus molestias.
+              </p>
+            </div>
+            <div class="col-md-6">
+              <img class="rounded-circle center1" src="./img/factory.png" alt="factory" width="140" height="140">
+              <h2 class="text-center">Mision y vision</h2>
+              <p>hola Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia natus maiores nisi quisquam architecto animi quasi enim possimus sequi accusantium. Vero ipsum natus fuga delectus repellendus maiores ratione fugit quis! ipsum dolor sit amet consectetur adipisicing elit. Deserunt consectetur cum tempore? Delectus voluptatem, illum, incidunt facilis cumque nisi distinctio vel aliquam adipisci deleniti ipsam eos, odit assumenda repudiandae error.</div>
+              </p>
+          </div>
+        </div>
+        <!-- Carrusel de servicios -->
+        <div class="servicios" id="service">
+                <h1 class="text-center mb-2 mt-5">Servicios <small>Ofrecidos</small></h1>
+        </div>
+        <!-- slider -->
+        <div class=" d-none d-sm-none d-md-block">
+            <!-- flecha rotaada -->
+          <div>
+              <img src="./img/flechasbuttom.svg"  class="flechabuttom rotate mt-0  d-none d-sm-none d-md-block" alt="">
+          </div>
+          <!-- Slider de Servicios -->
+          <div id="carouselExampleIndicators" class="carousel slide d-none d-sm-none d-md-block" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-100" src="./img/casco.jpg" alt="First slide">
+                  <div class="carousel-caption d-none d-md-block bg-yellow  opacity-carousel todo">
+                      <div class="tamtext1">
+                          <h5 class=" opacity-carousel-text">Titulo</h5>
+                          <p class=" opacity-carousel-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A quod necessitatibus aspernatur veniam molestiae, voluptate reprehenderit cumque fuga inventore consequuntur eligendi tenetur, explicabo non amet nulla dolor fugiat culpa iste.</p>
+    
+                      </div>                 
+                    </div>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="./img/casco.jpg" alt="Second slide">
+                  <div class="carousel-caption d-none d-md-block bg-yellow todo">
+                      <div class="tamtext1">
+                          <h5>Titulo</h5>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A quod necessitatibus aspernatur veniam molestiae, voluptate reprehenderit cumque fuga inventore consequuntur eligendi tenetur, explicabo non amet nulla dolor fugiat culpa iste.</p>
+    
+                      </div>                    </div>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="./img/casco.jpg" alt="Third slide">
+                  <div class="carousel-caption d-none d-md-block bg-yellow todo">
+                    <div class="tamtext1">
+                        <h5>Titulo</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A quod necessitatibus aspernatur veniam molestiae, voluptate reprehenderit cumque fuga inventore consequuntur eligendi tenetur, explicabo non amet nulla dolor fugiat culpa iste.</p>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./img/casco.jpg" alt="fourth slide">
+                    <div class="carousel-caption d-none d-md-block bg-yellow todo" >
+                        <div class="tamtext1">
+                            <h5>Titulo</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A quod necessitatibus aspernatur veniam molestiae, voluptate reprehenderit cumque fuga inventore consequuntur eligendi tenetur, explicabo non amet nulla dolor fugiat culpa iste.</p>
+      
+                        </div>                       </div>
+                  </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="flechas__left" aria-hidden="true">❮</span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="flechas__right" aria-hidden="true">❯</span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div><div>
+                <img src="./img/flechasbuttom.svg" class="flechabuttom" alt="" >
+              </div>
+            <br><br> <br>
+        </div>
+              <!-- linea  de servicios -->
+              <div id="piping"></div>
+      <div class="container py-2 margin58px">
+    
+          <!-- timeline item 1 -->
+          <div class="row no-gutters">
+              <div class="col-sm"> <!--Espacio--> </div>
+              <!-- timeline item 1 center dot -->
+              <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+                  <div class="row h-50">
+                      <div class="col">&nbsp;</div>
+                      <div class="col">&nbsp;</div>
+                  </div>
+                  <h5 class="m-2">
+                      <span class="badge badge-pill bg-warning border">&nbsp;</span>
+                  </h5>
+                  <div class="row h-50">
+                      <div class="col border-right">&nbsp;</div>
+                      <div class="col">&nbsp;</div>
+                  </div>
+              </div>
+              <!-- timeline item 1 COntent -->
+              <div class="col-sm py-2">
+                  <div class="card border-warning shadow"><!-- aca es donde se pinta el borde-->
+                      <div class="card-body" >
+                          <h4 class="card-title text-warning">PIPING</h4>
+                          <p class="card-text" id="estructura">Personal calificado para la ejecución de isometrías de todo tipo. Trabajando bajo nomas 
+                              exigentes de seguridad y calidad, para lograr los resultados y plazos que su obra requiere.
+                              Aplicando toda nuestra experiencia y tecnología en el prefabricado, soldadura, aplicación 
+                              de tratamientos de superficie (arenado) y todo tipo de pinturas industriales requeridas.
+                              También amplias instalaciones para acopio, carga y descarga de materiales.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!--/row-->
+          <!-- timeline item 2 -->
+          <div class="row no-gutters">
+              <div class="col-sm py-2">
+                  <div class="card border-turquesa shadow"><!-- aca es donde se pinta el borde-->
+                      <div class="card-body">
+                          <h4 class="card-title text-turquesa">ESTRUCTURA</h4>
+                          <p class="card-text">Construcción y montaje de toda clase de estructuras metálicas, (soportería, techos, aberturas, 
+                              escaleras, entrepisos, etc.) cumpliendo con todas las normas y calidades solicitadas en planos.
+                              Contamos con personal calificado y capacitado en ejecución de trabajos en planta y obra, con 
+                              seguridad y eficiencia. Aplicando toda nuestra experiencia y tecnología en el prefabricado, 
+                              soldadura, aplicación de tratamientos de superficie (arenado) y todo tipo de pinturas 
+                              industriales requeridas.</p>
+                      </div>
+                      
+                  </div>
+              </div>
+              <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+                  <div class="row h-50">
+                      <div class="col border-right">&nbsp;</div>
+                      <div class="col">&nbsp;</div>
+                  </div>
+                  <h5 class="m-2">
+                      <span class="badge badge-pill bg-turquesa">&nbsp;</span>
+                  </h5>
+                  <div class="row h-50">
+                      <div class="col border-right">&nbsp;</div>
+                      <div class="col" id="servicio">&nbsp;</div>
+                  </div>
+              </div>
+              <div class="col-sm" > <!--spacer--> </div>
+          </div>
+          <!--/row-->
+          <!-- timeline item 3 -->
+          <div class="row no-gutters">
+              <div class="col-sm"> <!--spacer--> </div>
+              <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+                  <div class="row h-50">
+                      <div class="col border-right">&nbsp;</div>
+                      <div class="col">&nbsp;</div>
+                  </div>
+                  <h5 class="m-2">
+                      <span class="badge badge-pill bg-azulintenso border">&nbsp;</span>
+                  </h5>
+                  <div class="row h-50">
+                      <div class="col border-right">&nbsp;</div>
+                      <div class="col" id="mantenimiento">&nbsp;</div>
+                  </div>
+              </div>
+              <div class="col-sm py-2">
+                  <div class="card border-azulintenso shadow">
+                      <div class="card-body">
+                          <h4 class="card-title text-azulintenso">SERVICIOS</h4>
+                          <p>Shoreditch vegan artisan Helvetica. Tattooed Codeply Echo Park Godard kogi, next level irony ennui twee squid fap selvage. Meggings flannel Brooklyn literally small batch, mumblecore PBR try-hard kale chips. Brooklyn vinyl lumbersexual
+                              bicycle rights, viral fap cronut leggings squid chillwave pickled gentrify mustache.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!--/row-->
+          <!-- timeline item 4 -->
+          <div class="row no-gutters">
+              <div class="col-sm py-2">
+                  <div class="card border-rojofluor shadow">
+                      <div class="card-body" id="mantenimiento">
+                          <h4 class="card-title text-rojofluor">MANTENIMIENTO</h4>
+                          <p>Montaje de líneas de alimentación de gas, energía eléctrica, redes de incendios y otros, 
+                              mediante todo tipo de conducción, hacia y desde plantas industriales. Contamos con personal 
+                              calificado y capacitado en ejecución de trabajos en planta y obra, con seguridad y eficiencia.</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+                  <div class="row h-50">
+                      <div class="col border-right">&nbsp;</div>
+                      <div class="col">&nbsp;</div>
+                  </div>
+                  <h5 class="m-2">
+                      <span class="badge badge-pill bg-rojofluor border">&nbsp;</span>
+                  </h5>
+                  <div class="row h-50">
+                      <div class="col">&nbsp;</div>
+                      <div class="col">&nbsp;</div>
+                  </div>
+              </div>
+              <div class="col-sm"> <!--spacer--> </div>
+          </div>
+          <!--/row-->
+      </div>
+        <!-- Personal -->
+        <!-- flecha rotaada -->
+        <div>
+            <img src="./img/flechasbuttom.svg"  class="flechabuttom rotate mt-0" alt="">
+        </div>
+        <!-- titulo  + personal-->
+        <div class="">
+          <h1 class="text-center bg-yellow h1especial text-light">Contamos con personal altamente capacitado</h1>
+        </div>
+        <!--  flecha normal-->
+        <div>
+              <img src="./img/flechasbuttom.svg"  class="flechabuttom" alt="">
+        </div>
+<!-- inicio personal -->
+        <div class="container-fluid">
+
+          <div class="row">
+            <!-- personal 1 -->
+              <div class="col-md-6 text-center ">
+                  <div class="card w-50 center1  border-dark shadow ">
+                      <!-- <img class="card-img-top" src="/images/pathToYourImage.png" alt="Card image cap"> -->
+                      <div class="card-body">
+                        <h2 class="card-title "> Mario F. Santana </h2>
+                        <img src="./img/myAvatar.png" alt="" class="rounded-circle" width="140px" height="140px">
+                        <p class="card-text">
+                            <span><strong>Presidente</strong><p class="lead">
+                                descripción
+                              </p></span>
+                        </p>
+                        <!-- <a href="#!" class="btn btn-primary">Go somewhere</a> -->
+                      </div>
+                  </div>
+              </div>
+              <!-- personal 2 -->
+              <div class="col-md-6 text-center">
+                <div class="card w-50 center1  border-dark shadow ">
+                    <!-- <img class="card-img-top" src="/images/pathToYourImage.png" alt="Card image cap"> -->
+                    <div class="card-body">
+                      <h2 class="card-title "> Dante A. Campoy </h2>
+                      <img src="./img/myAvatar.png" alt="" class="rounded-circle" width="140px" height="140px">
+                      <p class="card-text">
+                          <span><strong>Gerente Técnico</strong><p class="lead">
+                              descripción
+                            </p></span>
+                      </p>
+                      <!-- <a href="#!" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                </div>
+              </div>
+          </div>
+          <!-- Solo Escritorio ⬇️ -->
+          <div class="d-none d-sm-none d-md-block mt-5">
+              <div class="row mt-3">
+                  <!-- personal 3  -->
+                  <div class="col-md-4 text-center">
+                      <div class="card w-75 center1  border-dark shadow ">
+                          <!-- <img class="card-img-top" src="/images/pathToYourImage.png" alt="Card image cap"> -->
+                          <div class="card-body">
+                            <h3 class="card-title "> Ariel A. Campoy</h3>
+                            <img src="./img/myAvatar.png" alt="" class="rounded-circle" width="140px" height="140px">
+                            <p class="card-text">
+                                <span><strong>Relaciones Comerciales</strong><p class="lead">
+                                    descripción
+                                  </p></span>
+                            </p>
+                            <!-- <a href="#!" class="btn btn-primary">Go somewhere</a> -->
+                          </div>
+                      </div>
+                  </div>
+                  <!-- personal 4 -->
+                  <div class="col-md-4 text-center">
+                      <div class="card w-75 center1  border-dark shadow ">
+                          <!-- <img class="card-img-top" src="/images/pathToYourImage.png" alt="Card image cap"> -->
+                          <div class="card-body">
+                            <h4 class="card-title display-4"> Nombre</h4>
+                            <img src="./img/myAvatar.png" alt="" class="rounded-circle" width="140px" height="140px">
+                            <p class="card-text">
+                                <span><strong>Cargo</strong><p class="lead">
+                                    descripción
+                                  </p></span>
+                            </p>
+                            <!-- <a href="#!" class="btn btn-primary">Go somewhere</a> -->
+                          </div>
+                      </div>
+                  </div>
+                  <!-- personal 5 -->
+                  <div class="col-md-4 text-center">
+                      <div class="card w-75 center1  border-dark shadow ">
+                          <!-- <img class="card-img-top" src="/images/pathToYourImage.png" alt="Card image cap"> -->
+                          <div class="card-body">
+                            <h4 class="card-title display-4"> Nombre</h4>
+                            <img src="./img/myAvatar.png" alt="" class="rounded-circle" width="140px" height="140px">
+                            <p class="card-text">
+                                <span><strong>Cargo</strong><p class="lead">
+                                    descripción
+                                  </p></span>
+                            </p>
+                            <!-- <a href="#!" class="btn btn-primary">Go somewhere</a> -->
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>         
+        </div>
+        <!-- fin del personal -->
+        <!-- Inicio de contacto y mapas -->
+        <div class="margin58px" id="contacto"></div>
+        <h3 class="display-3 text-center col-lg-12 mb-5" ><small>Contactanos</small></h3>
+        <section class="row ml-2 mr-2 mb-5">    
+          <div class="col-sm-6">
+            <form class="d-none d-sm-none d-md-block">
+              <div class="form-inline">
+                  <div class="input-group col-sm-6 pr-0">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text"><img src="./img/person.png" alt="" width="20" height="20"></div>
+                      </div>
+                      <input type="text" class="form-control" placeholder="Nombre">
+                  </div>                
+                  <div class="input-group col-sm-6 pr-0">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text"><img src="./img/telephone.png" alt="" width="20" height="20"></div>
+                      </div>
+                      <input type="tel" class="form-control" placeholder="Telefono">
+                  </div>
+              </div>
+              <div class="form-group mt-4">
+                  <div class="input-group col-sm-12 pr-0">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text"><img src="./img/envelope.png" alt="" width="20" height="20"></div>
+                      </div>
+                      <input type="email" class="form-control" placeholder="Email">
+                  </div>   
+              </div>
+                <div class="form-group mt-4  mr-0">
+                  <div class="input-group col-sm-12 pr-0">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text"><img src="./img/pencil.png" alt="" width="20" height="20"></div>
+                      </div>
+                      <input type="text" class="form-control formtamtext " placeholder="Consulta">
+                  </div>  
+                </div>
+
+              <div class="form-group ">
+                  <div class="col-lg-12 pr-0 center">
+                    <button type="submit" class="btn btn-warning w-100">Envia Mensaje</button>
+                  </div>
+              </div>
+            </form>
+            <!-- solo para smartphone -->
+            <form class="d-block d-sm-block d-md-none">
+                <div class="form-inline">
+                    <div class="input-group col-sm-6 pr-0">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text"><img src="./img/person.png" alt="" width="20" height="20"></div>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Nombre">
+                    </div>                
+                    <div class="input-group col-sm-6 pr-0">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text"><img src="./img/telephone.png" alt="" width="20" height="20"></div>
+                        </div>
+                        <input type="tel" class="form-control" placeholder="Telefono">
+                    </div>
+                    <div class="input-group col-sm-12 pr-0">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text"><img src="./img/envelope.png" alt="" width="20" height="20"></div>
+                        </div>
+                        <input type="email" class="form-control" placeholder="Email">
+                    </div>   
+                </div>
+
+                  <div class="form-group mt-1  mr-0">
+                    <div class="input-group col-sm-12 pr-0">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text"><img src="./img/pencil.png" alt="" width="20" height="20"></div>
+                        </div>
+                        <input type="text" class="form-control formtamtext " placeholder="Consulta">
+                    </div>  
+                  </div>
+  
+                <div class="form-group ">
+                    <div class="col-lg-12 pr-0 center">
+                      <button type="submit" class="btn btn-warning w-100">Envia Mensaje</button>
+                    </div>
+                </div>
+            </form>
+          </div>
+
+          <!-- mapa -->
+          <div class="col-sm-6">
+            <div id="mapid">
+
+            </div>
+          </div> 
+        </section>
+        <!-- empresas que trabajaron para nosotros  -->
+
+      </main>
+
+      <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Contacto</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <form class="d-none d-sm-none d-md-block">
+                    <div class="form-inline">
+                        <div class="input-group col-sm-6 pr-0">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text"><img src="./img/person.png" alt="" width="20" height="20"></div>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Nombre">
+                        </div>                
+                        <div class="input-group col-sm-6 pr-0">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text"><img src="./img/telephone.png" alt="" width="20" height="20"></div>
+                            </div>
+                            <input type="tel" class="form-control" placeholder="Telefono">
+                        </div>
+                    </div>
+                    <div class="form-group mt-4">
+                        <div class="input-group col-sm-12 pr-0">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text"><img src="./img/envelope.png" alt="" width="20" height="20"></div>
+                            </div>
+                            <input type="email" class="form-control" placeholder="Email">
+                        </div>   
+                    </div>
+                      <div class="form-group mt-4  mr-0">
+                        <div class="input-group col-sm-12 pr-0">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text"><img src="./img/pencil.png" alt="" width="20" height="20"></div>
+                            </div>
+                            <input type="text" class="form-control formtamtext " placeholder="Consulta">
+                        </div>  
+                      </div>
+      
+                    
+                  
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                    <button type="submit" class="btn btn-warning w-100">Envia Mensaje</button>
+            </div>
+          </form>
+            </div>
+          </div>
+      </div>
+
+      <!-- footer -->
+      
+
+      <footer class="blog-footer text-center bg-yellow">
+        <p>
+        <a href="#">Regresar arriva</a>
+        </p>
+        <p class="gabriel">Creado por &copy; Gabriel Vauccassovitch</p>
+      </footer>
+           
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.js"></script> -->
+    <!-- Cierre del menu al hacer click en un link -->
+    <script>
+      $(document).ready(()=>{
+
+        $('.nav-close').click(function(){
+        $('.navbar-toggler-icon').click();
+        });
+        $('.carousel-item').hover(()=>{
+          $(".carousel").carousel('pause');
+        });
+        $("body").click(()=>{
+          console.log($(window).scrollTop());
+        });
+      });
+      $(function(){
+  $('[data-toggle="tooltip"]').tooltip();
+});
+
+    </script>
+    <!-- iniciacion y markado del mapa -->
+    <script src="./js/main.js">
+    </script>
+  </body>
+</html>
+
+
+<!-- Agrandar los icones de contatos en el nav -->
