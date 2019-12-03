@@ -16,6 +16,9 @@ color: #212529;
 .logoa{
     color: white;
 }
+.logob{
+    color:rgb(255, 204, 0);
+}
 .logolah1{
     letter-spacing: -0.2em;
 } .logolah5{
@@ -93,7 +96,7 @@ body{
     opacity: 100%;
     /*  color de la flecha es el mismo que el del triangulo 2 #E6D151*/
     /*  el resultante de la suma con el otro color es #EDD35C*/
-    // opacity: 75%;
+   /* opacity: 75%;*/
 }
 .triangulo1{
             height: 90vh;
@@ -166,7 +169,7 @@ body{
     margin-top: -1px;
 }
 .tamtext1{
-    width: 600px;
+    width: 700px;
     margin: 0 auto;
 }
 .formtamtext{
@@ -194,7 +197,7 @@ footer{
     height: 100%;
 }
 .opacity-carousel{
-    opacity: 70%;
+    opacity: 80%;
 }
 .opacity-carousel-text{
     opacity: 200%;
@@ -240,4 +243,42 @@ footer{
 .lineamedio span{
     background: white;
     padding:0 10px; 
+}
+.border-yellow{
+    border: 1px solid rgb(255, 204, 0);;
+}
+.zindex-300{
+    z-index:300;
+}
+.text-shadow{
+    text-shadow: 1px 1px #000;
+}
+.btn-turquesa{
+    color: #fff;
+    background-color: #52c6d0;
+    border-color: #3d9097;
+}
+.btn-azulintenso{
+    color: #fff;
+    background-color: #6E4D8B;
+    border-color: rgb(58, 40, 73);
+}
+.btn-rojofluor{
+    color: #fff;
+    background-color: #ED2F59;
+    border-color: rgb(168, 35, 64);
+}.btn-turquesa:hover{
+    color: #fff;
+    background-color: #37838a;
+    border-color: #1f494d;
+}
+.btn-azulintenso:hover{
+    color: #fff;
+    background-color: rgb(58, 40, 73);
+    border-color: rgb(35, 24, 44);
+}
+.btn-rojofluor:hover{
+    color: #fff;
+    background-color: rgb(168, 37, 65);
+    border-color: rgb(92, 19, 35);
 }
