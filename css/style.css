@@ -282,3 +282,9 @@ footer{
     background-color: rgb(168, 37, 65);
     border-color: rgb(92, 19, 35);
 }
+.carousel-inner img{
+    height: 445px;
+}
+.altofoto{
+    height: 445px !important;
+}
